@@ -494,7 +494,7 @@ header {
 .images-container {
     position: relative;
     overflow: hidden;
-    margin: 5%;
+    margin: 10px 0px 10px 0px;
     width: 90%;
 }
 
