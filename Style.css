@@ -381,7 +381,7 @@ h3{
 
 
 /*-------------------------------------------------------------------------------------------------------------
-                                  ABOUT SECTION SECOND PAGE           
+                                                ABOUT SECTION SECOND PAGE           
 /*------------------------------------------------------------------------------------------------------------*/
 
 
@@ -494,7 +494,7 @@ header {
 .images-container {
     position: relative;
     overflow: hidden;
-    margin: 10px 0px 10px 0px;
+    margin: 5%;
     width: 90%;
 }
 
@@ -537,6 +537,7 @@ header {
 .image img {
     width: 100%; /* Adjust the size of the image inside each container */
     height: auto;
+    margin-top: 10px;
     margin-left: 10%;
 }
 
