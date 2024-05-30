@@ -537,7 +537,7 @@ header {
 .image img {
     width: 100%; /* Adjust the size of the image inside each container */
     height: auto;
-    margin-top: 10px;
+    margin-top: 20px;
     margin-left: 10%;
 }
 
