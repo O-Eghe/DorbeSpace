@@ -116,7 +116,7 @@ nav .fa{
 @media(max-width: 700px){
     .main-page h1{
         font-size: 29px;      /* this is  the font size for a small device like a (phone) the Dorbe caption */
-        /* width: 100%; */
+        width: 100%;
     }
     .nav-links ul li{
         display: block;
