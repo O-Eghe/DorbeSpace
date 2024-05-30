@@ -112,9 +112,10 @@ nav .fa{
     display: none;   /*I AM STUCK HEREEEEEE *SIGGGHHHHH* */
 }
 
-@media(max-width: 700px){
+@media(max-width: 500px){
     .main-page h1{
         font-size: 29px;      /* this is  the font size for a small device like a (phone) the Dorbe caption */
+        /* width: 100%; */
     }
     .nav-links ul li{
         display: block;
@@ -122,16 +123,15 @@ nav .fa{
     .nav-links{
         position: absolute;
         background: #f44336;
-        height: 27vh;   /* this is the length of nav bar in the preset for a smart device */
+        height: 30vh;   /* this is the length of nav bar in the preset for a smart device */
         width: 184px;
         top: 0;
-        right: -200px;
+        right: -184.5px;
         text-align: left;
         z-index: 2;
         transition: 1s;  /* This is for the bar on the mobile device on the top right */
+    
     } 
-
- 
 nav .fa{
     display: block;
     color: #fff;
@@ -162,7 +162,7 @@ nav .fa{
 }
 h1{
     font-size: 36px;       /* this is for the main heading of the title after the background pictiure*/
-    font-weight: 600px;
+    font-weight: 600;
 }
 
 p{
@@ -202,7 +202,9 @@ h3{
 } 
 
 @media(max-width: 700px) {
-    .row{flex-direction: column;}
+    .row{
+        flex-direction: column;
+    }
 }
 
 
@@ -238,23 +240,23 @@ h3{
     transition: 0.5s;
 }
 .layer:hover{
-    background: rgba(84, 77, 77, 0.7);  /* this will change the pictures colour when ever i hover over them*/
+    background: rgba(67, 67, 63, 0.7);  /* this will change the pictures colour when ever i hover over them*/
 }
 
 .layer h3{
     width: 100%;
     font-weight: 500;
-    color: #fff;
+    color: white;
     font-size: 26px;        /* this section is for the 3 body inside, it changes title */
     bottom: 0;
     left: 50%;
-    transform: translate(-50%);
+    transform: translateX(-50%);
     position: absolute;
 } 
 
 .layer:hover h3{
     Bottom: 49%;      /* when someone hovers over the 3 images the name on that page will show */
-    opacity: 1;
+    opacity: 0.5s;
 }
 
 
@@ -338,13 +340,12 @@ h3{
     color: #f44336;
 }
 
-/*@media(max-width: 700px){
+/* @media(max-width: 700px) { 
     .testimonial-col img{
-       margin-left: 0px;    /* this section will make the page look nicer its to make the spaces around the picture but theres no picture atm look nicer 
-       margin-right: 15px;
-}
-
-} */
+        margin-left: 0px;
+        margin-right: 15px;
+    }
+ } */
 
 
 
@@ -704,6 +705,13 @@ button:hover {
     font-weight: 600;
 }
 
+/* .icons { 
+    color: #f44336;
+    margin: 0px 13px;
+    cursor: pointer;
+    padding: 18px 0;
+    display:flex;
+  }  */
 
 footer {
     background-color: #333333;
@@ -737,9 +745,10 @@ footer {
   }
 
   .follow-us h2 {
-    font-size: 18px;
+    font-size: 15px;
     padding: 0px 10px 0px 200px;
-    margin-right: 120px;
+    margin-right: 50px;
+    color: #f44336;
     
   }
 
@@ -776,13 +785,57 @@ footer {
 
   
 
+   @media (max-width: 768px) { 
+    .contact h2 {
+        text-align: left;
+     margin-left: 1px; 
+        min-width: 50%;
+
+    }
+ } 
+
+/* @media (max-width: 768px) {
+    .contact h2 {
+        /* margin-left: 5%; *
+    
+} */
+
+  @media (max-width: 768px) {
+    .contact p {
+        flex-direction: column;
+        align-items: left;
+        min-width: 50%;
+        text-align: left;
+        margin-left: 1px;
+    }
+}
+
+
+/* @media (max-width: 480px) {
+    .contact p {
+        min-width: 50%;
+        text-align: left;
+        margin-left: 1px;
+    }
+} */
+
+
+/* @media (max-width: 768px) {
+    .contact h2 {
+        margin-left: 3%;
+    }
+} */
+
+@media (max-width: 480px) {
+    .follow-us h2 {
+        min-width: 0.5%;
+        /* text-align: right; */
+        margin-right: 50px;
+    }
+}
+
+
 /*------------------------------------------------------------------------------------------------------------*/
                   /*       Footer Section for all the pages           */
 /*------------------------------------------------------------------------------------------------------------*/
-
-
-
-
-
-
 
