@@ -695,16 +695,34 @@ button:hover {
 }
 
 @media(max-width: 700px){
+.contactus {
+    position: relative;
+    width:fit-content;
+    margin: 40px 10px 40px 55px;
 
-    .contactus{ 
-    position:relative;
-     width: fit-content; 
-     margin: 50px 0px 50px 80px; 
-     padding-right: 14%;
-    }
-
-
+    padding: 50px 80px 50px 10px;
 }
+}
+
+@media(max-width: 700px){
+    .contactus .form-group{
+       padding: 5px 5px 5px 25px;
+
+    }
+    
+}                  /* The media section works for the small device */
+
+@media(max-width: 700px){
+    .contactus h1{
+        padding: 1px 35px 25px 5px;
+    }
+}
+
+
+
+
+
+
 
 
 
@@ -804,8 +822,10 @@ footer {
 
    @media (max-width: 768px) { 
     .contact h2 {
+        font-size: 22px;
         text-align: left;
-     margin-left: 1px; 
+        margin: 1px 1px 40px 45px;
+
         min-width: 50%;
 
     }
@@ -817,15 +837,15 @@ footer {
     
 } */
 
-  @media (max-width: 768px) {
+  /* @media (max-width: 768px) {
     .contact p {
         flex-direction: column;
         align-items: left;
-        min-width: 50%;        /*this makes the page go wider*/
+        min-width: 50%;        /*this makes the page go wider*
         text-align: left;
         margin-left: 1px;
     }
-}
+} */
 
 
 /* @media (max-width: 480px) {
@@ -845,26 +865,47 @@ footer {
 
 @media (max-width: 480px) {
     .follow-us h2 {
-        font-size: 15px;
-        /* min-width: 0.5%; */
+        font-size: 22px;
+        min-width: 0.5%;
         /* text-align: right; */
-        margin-right: 50px;
-        padding: 5px 20px 20px 50px;
-    }
-
-
-    .follow-us ul{
-        
+        margin: 7px 6px 10px 45px;
     }
 }
 
-
-@media(max-width: 700px) {
-        .follow-us ul {
-            padding: 15px 20px 20px 35px;
-        }
-
+@media (max-width: 480px) {
+    .contact h2 {
+        font-size: 22px;
+        min-width: 0.5%;
+        /* text-align: right; */
+        margin: 1px 6px 10px 45px;
+    }
 }
+
+ @media (max-width: 480px) {
+    .contact p {
+        font-size: 13px;
+        min-width: 0.5%;
+        padding: 1px 1px 3px 1px;; 
+        margin: 1px 6px 10px 45px;
+    }
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
