@@ -1,30 +1,8 @@
+document.addEventListener("DOMContentLoaded", function() {
 
   
-  var navLinks = document.getElementById("navLinks");
-  
-  function showMenu(){
-    navLinks.style.right = "0";   /* This is for the bar on the mobile device on the top right, it hide the menu */
-  }
-  
-  function hideMenu(){
-    navLinks.style.right = "-200px"; /* This is for the bar on the mobile device on the top right, it shows the menu */
-  }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  document.addEventListener("DOMContentLoaded", function() {
+  // document.addEventListener("DOMContentLoaded", function() {
     const prevBtn = document.getElementById("prevBtn");
     const nextBtn = document.getElementById("nextBtn");
     const images = document.querySelectorAll(".image");
@@ -83,6 +61,6 @@ document.getElementById('contactForm').addEventListener('submit', function(event
   } else {
       alert('Please fill out all fields.');
   }
+  
 });
-
 

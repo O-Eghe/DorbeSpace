@@ -130,12 +130,13 @@ nav .fa{
     .nav-links{
         position: fixed;
         background: #f44336;
-        height: 35vh;   /* this is the length of nav bar in the preset for a smart device */
+        height: 33vh;   /* this is the length of nav bar in the preset for a smart device */
         width: 184px;
         top: 0;
         /* width: 100px; */
         right: -184.5px; 
-        text-align: left;
+        /* right: -40px; */    /* this removes the orange slide menu and stops it from overflowing on the right*/
+        text-align: left; 
         z-index: 2;
         transition: 1s;  /* This is for the bar on the mobile device on the top right */
     
@@ -693,7 +694,17 @@ button:hover {
     font-size: 1.2em;
 }
 
+@media(max-width: 700px){
 
+    .contactus{ 
+    position:relative;
+     width: fit-content; 
+     margin: 50px 0px 50px 80px; 
+     padding-right: 14%;
+    }
+
+
+}
 
 
 
@@ -834,11 +845,27 @@ footer {
 
 @media (max-width: 480px) {
     .follow-us h2 {
-        min-width: 0.5%;
+        font-size: 15px;
+        /* min-width: 0.5%; */
         /* text-align: right; */
         margin-right: 50px;
+        padding: 5px 20px 20px 50px;
+    }
+
+
+    .follow-us ul{
+        
     }
 }
+
+
+@media(max-width: 700px) {
+        .follow-us ul {
+            padding: 15px 20px 20px 35px;
+        }
+
+}
+
 
 
 /*------------------------------------------------------------------------------------------------------------*/
