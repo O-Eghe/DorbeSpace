@@ -717,14 +717,14 @@ button:hover {
         font-size: 25px;
         /* position: center;  */
          margin: 15px 20px 0px 20px;  
-        padding: 15px 20px 0px 95px;
+        padding: 15px 20px 0px 69px;
     }
 }
 
 @media( max-width: 700px){
     .hero-btn.red-btn{
         margin-left: auto; /* Moves the button to the right */
-    margin-right: 35px;
+    margin-right: 25px;
     width: auto; /* Ensure the button does not take full width */
     display: block;
     }
