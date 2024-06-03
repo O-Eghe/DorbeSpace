@@ -722,14 +722,14 @@ button:hover {
     }
 }
 
-@media (min-width: 300px) and (max-width: 480px){
+/*@media (min-width: 300px) and (max-width: 480px){
     .hero-btn-red-btn{
-        margin-left: auto; /* Moves the button to the right */
+        margin-left: auto; /* Moves the button to the right 
     margin-right: 25px;
-    width: auto; /* Ensure the button does not take full width */
+    width: auto; /* Ensure the button does not take full width 
     display: block;
     }
-}
+}*/
 
 
 
