@@ -714,13 +714,21 @@ button:hover {
 
 @media(max-width: 700px){
     .contactus h1{
-        position: center; 
-        /* margin: 15px 0px 0px 0px;  */
-        padding: 0px 80px 10px 0px;
+        font-size: 25px;
+        /* position: center;  */
+         margin: 15px 20px 0px 20px;  
+        padding: 15px 20px 0px 95px;
     }
 }
 
-
+@media( max-width: 700px){
+    .hero-btn.red-btn{
+        margin-left: auto; /* Moves the button to the right */
+    margin-right: 35px;
+    width: auto; /* Ensure the button does not take full width */
+    display: block;
+    }
+}
 
 
 
@@ -828,10 +836,14 @@ footer {
         text-align: left;
         margin: 1px 1px 40px 45px;
 
-        min-width: 50%;
+        /* min-width: 50%; */
 
     }
  } 
+
+
+
+ 
 
 /* @media (max-width: 768px) {
     .contact h2 {
@@ -891,22 +903,6 @@ footer {
         margin: 1px 6px 10px 45px;
     }
 } 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
