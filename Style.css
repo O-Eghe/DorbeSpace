@@ -119,7 +119,7 @@ nav .fa{
 
 
 
-@media(max-width: 700px){
+@media (min-width: 300px) and (max-width: 480px){
     .main-page h1{
         font-size: 29px;      /* this is  the font size for a small device like a (phone) the Dorbe caption */
         /* width: 100%; */
@@ -212,7 +212,7 @@ h3{
     box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);   /* this is for the two boxes in the middle of the page */
 } 
 
-@media(max-width: 700px) {
+@media (min-width: 300px) and (max-width: 480px) {
     .row{
         flex-direction: column;
     }
@@ -384,7 +384,7 @@ h3{
     padding: 0;
 }
 
-@media(max-width: 700px) {
+@media (min-width: 300px) and (max-width: 480px) {
     .cta h1{
         font-size: 24px;         /* this is for the section when on a small device */
     }
@@ -694,7 +694,7 @@ button:hover {
     font-size: 1.2em;
 }
 
-@media(max-width: 700px){
+@media (min-width: 300px) and (max-width: 480px){
 .contactus {
     position: relative;
     width:fit-content;
@@ -704,15 +704,16 @@ button:hover {
 }
 }
 
-@media(max-width: 700px){
+@media (min-width: 300px) and (max-width: 480px){
     .contactus .form-group{
+        position: relative;
        padding: 5px 2px 5px 25px;
 
     }
     
 }                  /* The media section works for the small device */
 
-@media(max-width: 400px){
+@media (min-width: 300px) and (max-width: 480px){
     .contactus h1{
         font-size: 20px;
         /* position: center;  */
@@ -721,7 +722,7 @@ button:hover {
     }
 }
 
-@media( max-width: 700px){
+@media (min-width: 300px) and (max-width: 480px){
     .hero-btn.red-btn{
         margin-left: auto; /* Moves the button to the right */
     margin-right: 25px;
@@ -847,7 +848,7 @@ footer {
   }
   
 
-  @media (max-width: 480px) {
+  @media (min-width: 300px) and (max-width: 480px) {
     .copyright p{
         font-size: 1px;
         padding-top: 10px;
@@ -904,7 +905,7 @@ footer {
     }
 } */
 
-@media (max-width: 480px) {
+@media (min-width: 300px) and (max-width: 480px){
     .follow-us h2 {
         font-size: 13px;
         min-width: 0.5%;
@@ -914,7 +915,7 @@ footer {
     }
 }
 
- @media (max-width: 480px) {
+@media (min-width: 300px) and (max-width: 480px) {
     .follow-us ul {
         margin: 5px 10px 0px -70px; 
         padding: 0px 0px 90px 60px;
@@ -926,7 +927,7 @@ footer {
 
 
 
-@media (max-width: 480px) {
+@media (min-width: 300px) and (max-width: 480px) {
     .contact h2 {
         font-size: 13px;
         min-width: 0.5%;
@@ -936,7 +937,7 @@ footer {
     }
 }
 
- @media (max-width: 480px) {
+@media (min-width: 300px) and (max-width: 480px) {
     .contact p {
         font-size: 13px;
         min-width: 0.5%;
