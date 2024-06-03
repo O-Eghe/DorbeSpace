@@ -700,7 +700,7 @@ button:hover {
     width:fit-content;
     margin: 40px 10px 40px 30px;
 
-    padding: 50px 80px 50px 10px;
+    padding: 50px 80px 50px 150px;
 }
 }
 
@@ -779,9 +779,10 @@ footer {
   }
   
   .contact h2 {
-    font-size: 18px;
-    margin-bottom: 2%;
-    margin-left: 30%;
+    font-size: 23px;
+    padding: 10px 0px 0px 210px;
+    /* margin-bottom: 2%;
+    margin-left: 30%; */
    /* padding: 0px 10px 0px 200px; */
   }
 
@@ -813,14 +814,20 @@ footer {
     text-decoration: underline; /* this will allow the email to be underlined when i hover over it.*/
   }
   
+.follow-us h2{
+  font-size: 23px;
+  padding-left: 100px;
+  padding-top: 12px;
+}
+
   .follow-us ul {
     list-style: none;
-    padding: 0;
+    padding: 13px 0px 10px 0px; 
   }
   
   .follow-us li {
     margin-bottom: 5px;
-    padding: 0px 10px 0px 50px;          /* this moves the Facebook etc to the side */
+    padding: 10px 0px 0px 130px;          /* this moves the Facebook etc to the side */
   }
   
   .follow-us a {
@@ -828,18 +835,38 @@ footer {
     text-decoration: none;
   }
 
+  /* .copyright h2{
+    font-size: 23px;
+        padding: 10px 300px 0px 30px;
+  } */
+
+
+  .copyright p{
+    padding-top: 30px;
+    color:rgba(133, 133, 133, 0.7)
+  }
   
 
-   @media (max-width: 768px) { 
+  @media (max-width: 480px) {
+    .copyright p{
+        font-size: 1px;
+        padding-top: 10px;
+        padding-right: 250px;
+        color:rgba(133, 133, 133, 0.7)
+    }
+  }
+  
+
+   /* @media (max-width: 768px) { 
     .contact h2 {
-        font-size: 22px;
+        font-size: 23px;
         text-align: left;
         margin: 1px 1px 40px 45px;
 
-        /* min-width: 50%; */
+        /* min-width: 50%; *
 
     }
- } 
+ }  */
 
 
 
@@ -879,19 +906,33 @@ footer {
 
 @media (max-width: 480px) {
     .follow-us h2 {
-        font-size: 22px;
+        font-size: 13px;
         min-width: 0.5%;
         /* text-align: right; */
-        margin: 7px 6px 10px 45px;
+        /* margin: 0px 6px 20px -90px; */
+        padding: 5px 6px 20px 100px;
     }
 }
 
+ @media (max-width: 480px) {
+    .follow-us ul {
+        margin: 5px 10px 0px -70px; 
+        padding: 0px 0px 90px 60px;
+        /* t l b r*/
+    }
+} 
+
+
+
+
+
 @media (max-width: 480px) {
     .contact h2 {
-        font-size: 22px;
+        font-size: 13px;
         min-width: 0.5%;
         /* text-align: right; */
-        margin: 1px 6px 10px 45px;
+        /* margin: 1px 6px 10px -220px; */
+        padding: 5px 6px 10px 0px;
     }
 }
 
@@ -899,8 +940,8 @@ footer {
     .contact p {
         font-size: 13px;
         min-width: 0.5%;
-        padding: 1px 1px 3px 1px;; 
-        margin: 1px 6px 10px 45px;
+        padding: 1px 0px 3px 0px; 
+        margin: 4px 6px 10px 1px;
     }
 } 
 
