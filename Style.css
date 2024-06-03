@@ -712,7 +712,7 @@ button:hover {
     
 }                  /* The media section works for the small device */
 
-@media(max-width: 700px){
+@media(max-width: 400px){
     .contactus h1{
         font-size: 25px;
         /* position: center;  */
