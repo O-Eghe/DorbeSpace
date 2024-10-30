@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html> <!-- lang="en"> -->
+
+<head>
+
+ <!--  <meta charset="UTF-8"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dorbe Space Design</title>
+    <link rel="stylesheet" href="Style.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;0,700;1,100&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">  <!-- imported this from the (font awesome icon)-->
+
+<link href="Images/ehis_logo.png" rel="icon" type="Image/x-icon" />
+
+
+</head>
+
+<body>
+    
+    <section class="project-header">
+
+      <nav>
+
+       <a href="index.html"><img src="Images/ehis_logo.png"></a>
+
+      <div class="nav-links" id="navLinks">
+
+       
+      <i class="fa fa-times" onclick="hideMenu()"></i> <!--imported this from the (font awesome 4 icon)-->
+      
+
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="Projects.html">Projects</a></li>
+        <li><a href="About.html">About</a></li>   <!-- Updated this line -->
+        <li><a href="Contact.html">Contact</a></li>
+    </ul>
+    
+    
+    
+        </div>
+
+        <i class="fa fa-bars" onclick="showMenu()"></i> <!-- imported this from the (font awesome 4 icon)-->
+
+      </nav>
+
+    
+      <div class="project-title"> 
+
+        <h1> Dorbe </h1>
+
+          <!-- <a href=""class="hero-btn">Visit Us to Know more</a> -->
+
+    </section>
+
+   
+<main>
+  <section class="gallery">
+      <div class="Images-container">
+          <div class="image active">
+              <img src="Images/barbs 3.png" alt="Project 1">
+          </div>
+          <div class="image">
+              <img src="Images/barbs 1.png" alt="Project 2">
+          </div>
+          <div class="image">
+              <img src="Images/barbs 2.png" alt="Project 3">
+          </div>
+          <div class="image">
+              <img src="Images/ehis4.png" alt="Project 4">
+          </div>
+          <div class="image">
+              <img src="Images/ehis5.png" alt="Project 5">
+          </div>
+      </div>
+      <div class="controls">
+          <button id="prevBtn">Previous</button>
+          <button id="nextBtn">Next</button>
+      </div>
+  </section>
+</main>
+  
+  
+</body>
+
+   <footer>
+    <div class="contact"> <!-- the contact page in the footer section-->
+        <h2>Contact</h2>
+        <!---  <p> Email: student.hub@solent.ac.uk </p> -->
+        <p>Email: <a href="mailto:dorbespace@gmail.com">Dorbespace@gmail.com</a></p>
+        <p> Phone: 08129996692</p>
+        <div class="copyright">
+          <!-- <h2> Copyright</h2> -->
+          <p> © 2024 Osasere Eghe-Ohenmwen </p>
+        </div>
+  
+    </div>
+
+    <div class="follow-us"> <!-- the follow page in the footer section-->
+        <h2>Follow Us</h2>
+        <ul>
+            <!-- <li><a href="https://www.instagram.com/dorbespace?igsh=ODIxbTNoYms4eG1x"><img src="Images/Twitter.png" alt="Twitter" width="30"
+                        height="30"></a></li>
+            <li><a href="https://www.facebook.com/SolentUniversity/?locale=en_GB"><img src="Images/Facebook.png"
+                        alt="Facebook" width="30" height="30"></a></li> -->
+            <li><a href="https://www.instagram.com/dorbespace/"><img src="Images/Instagram.png"
+                        alt="Instagram" width="30" height="30"></a></li>
+        </ul>
+    </div>
+  
+    
+  
+
+    <!-- <div class="copyright">
+        <!-- <h2> Copyright</h2> --
+        <p> © 2024 Osasere Eghe-Ohenmwen </p>
+      </div> -->
+
+
+
+
+  </footer>
+
+
+  <script src="scripts.js"></script>
+
+  
+
+  <script src="script.js"></script>
+
+  <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <script type="text/javascript">
+      (function(){
+          emailjs.init("pKPfvl7Ky_bpxqdEH"); // Replace 'YOUR_USER_ID' with your actual EmailJS user ID
+      })();
+
+
+var navLinks = document.getElementById("navLinks");
+
+function showMenu(){
+navLinks.style.right = "0";   /* This is for the bar on the mobile device on the top right, it hide the menu */
+}
+
+function hideMenu(){
+navLinks.style.right = "-200px"; /* This is for the bar on the mobile device on the top right, it shows the menu */
+}
+
+
+
+      
+  </script>
+
+
+  </html> 
+
+
+

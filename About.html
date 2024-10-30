@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html> <!-- lang="en"> -->
+
+<head>
+
+ <!--  <meta charset="UTF-8"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dorbe Space Design</title>
+    <link rel="stylesheet" href="Style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;0,700;1,100&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- imported this from the (font awesome icon)-->
+
+<link href="Images/ehis_logo.png" rel="icon" type="image/x-icon" />
+
+
+</head>
+
+
+<body>
+    
+    <section class="sub-header">
+
+      <nav>
+
+       <a href="index.html"><img src="Images/ehis_logo.png"></a>
+
+      <div class="nav-links" id="navLinks">
+
+       
+      <i class="fa fa-times" onclick="hideMenu()"></i> <!--imported this from the (font awesome 4 icon)-->
+      
+
+
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="Projects.html">Projects</a></li>
+        <li><a href="About.html">About</a></li>   <!-- Updated this line -->
+        <li><a href="Contact.html">Contact</a></li>
+    </ul>
+  
+
+        </div>
+
+        <i class="fa fa-bars" onclick="showMenu()"></i> <!-- imported this from the (font awesome 4 icon)-->
+
+
+      </nav>
+    
+      <h1> Dorbe</h1> 
+    </section>
+
+
+  <!----------------------------------------------------------About Us Content---------------------------------------------------------------------->
+
+  <section class="about-us">
+
+    <div class="row">
+      <div class="about-col">
+
+        <h1> About US </h1>
+           <p> We desgin projects for our clients across the country with a focus on quality, innovative approach and impeccable delivery. <br> <br>
+
+             Our key divison of scope include residential, cooperate, commercial, and hospitality. <br> <br>
+
+            Having excuted a vast number of projects across the country, we essentially translate the vision and lifestyle of our clients 
+            into a truly uniqueliving or working space. 
+            Accentuating the personalised look and feel to compliment the essence and wishes of our clients. <br> <br>
+
+            Dorbe prides itself on offering a service that goes above and beyond expections,
+             constantly pushing forward the boundaries, we are driven to be the ultimate choice in all field of luxury.
+            
+             </p>
+           <a href="Contact.html" class="hero-btnn">Contact Us</a>
+      </div>
+      <div class="about-col">
+         <img src="Images/ehis12.png">
+    </div>
+  </div>
+  
+
+  </section>
+   
+
+
+
+
+
+<!-------------------------------------------------------Footer------------------------------------------------->
+
+
+<footer>
+  <div class="contact"> <!-- the contact page in the footer section-->
+          <h2>Contact</h2>
+          <!---  <p> Email: student.hub@solent.ac.uk </p> -->
+          <p>Email: <a href="mailto:dorbespace@gmail.com">Dorbespace@gmail.com</a></p>
+          <p> Phone: 08129996692</p>
+          <div class="copyright">
+            <!-- <h2> Copyright</h2> -->
+            <p> © 2024 Osasere Eghe-Ohenmwen </p>
+          </div>
+
+  </div>
+
+  <div class="follow-us"> <!-- the follow page in the footer section-->
+      <h2>Follow Us</h2>
+      <ul>
+        <ul>
+          <!-- <li><a href="https://www.instagram.com/dorbespace?igsh=ODIxbTNoYms4eG1x"><img src="Images/Twitter.png" alt="Twitter" width="30"
+                      height="30"></a></li>
+          <li><a href="https://www.facebook.com/SolentUniversity/?locale=en_GB"><img src="Images/Facebook.png"
+                      alt="Facebook" width="30" height="30"></a></li> -->
+          <li><a href="https://www.instagram.com/dorbespace/"><img src="Images/Instagram.png"
+                      alt="Instagram" width="30" height="30"></a></li>
+      </ul>
+  </div>
+
+<!---  <div class="about">
+      <img src="images/ehis_logo.png">
+  </div> -->
+
+
+
+  <!-- <div class="copyright">
+    <!-- <h2> Copyright</h2> -
+    <p> © 2024 Osasere Eghe-Ohenmwen </p>
+  </div> -->
+
+</footer>
+
+</section>
+
+
+
+<!---------------------------------------------------------JS-------------------------------------------------------------------------->
+
+<script>
+
+var navLinks = document.getElementById("navLinks");
+
+function showMenu(){
+  navLinks.style.right = "0";   /* This is for the bar on the mobile device on the top right, it hide the menu */
+}
+
+function hideMenu(){
+  navLinks.style.right = "-200px"; /* This is for the bar on the mobile device on the top right, it shows the menu */
+}
+
+
+</script>
+
+
+ </body>
+
+</html>

@@ -1,0 +1,1010 @@
+/*---------------------------------------------INDEX HEADER------------------------------------------ */
+
+body {
+min-height: 100vh;
+}
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;  /*BARBARA*/ /* this was got from google and i had to copy and paste it inside here from Google fonts */
+
+}
+
+.index-header{
+    min-height: 100vh;
+    width: 100%;
+    background-image:linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(Images/Banner.png);
+    background-position: center;
+    background-size: cover; 
+    position: relative;
+}
+
+nav{
+    display: flex;
+    padding:2% 6%;
+    justify-content: space-between;     /*All my navigation bars Home,About,Projects,Contact*/
+    align-items: center;
+    
+}
+nav img{
+    width: 110px;      /* This works with the logo on the top left */
+}
+
+.nav-links{
+    flex: 1;
+    text-align: right;
+    position: relative;
+} 
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative; 
+} 
+
+.nav-links ul li a{          /*Navigatition button */
+    color: #fff;
+    text-decoration: none;
+    font-size: 19px;         /*Navigatition button */
+}
+
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: orange;    /*the lines under the Home, About project, contact */
+    display: block;
+    margin: auto;
+} 
+
+.nav-links ul li::after{
+    content:'';
+    width: 0%;
+    height: 2px;
+    background: #f44336;  /*the revolves around the lines in for the Top right section of the page so the lines shows when someone hovers over it on the website */
+    display: block;
+    margin: auto;
+    transition: auto;
+    transition: 0.05s;
+} 
+
+.nav-links ul li:hover::after{
+    width: 100%;                     /*the revolves around the lines in for the Top right section of the page so the lines shows when someone hovers over it on the website */
+}
+
+.main-page{
+    width: 90%;
+    color: #fff;
+    position: absolute; 
+    top: 50%;                   /* this changes the alignment of the top paragraph in the jome page.*/
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.main-page h1{
+    font-size: 62px;
+    color: white;
+}
+
+.main-page p{
+    margin: 10px 0 40px;
+    font-size: 14px;              /* this represents the long paragraph in the home page top */
+    color: #fff;
+} 
+
+
+
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;                /* this is for the Visit us button*/
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+} 
+
+.hero-btn:hover{
+    border: 1px solid White;    /* also for the Visit us button */
+    background: #f44336;                
+    transition: 1s;
+} 
+
+/* .hero-btnn{
+    display: inline-block;
+    text-decoration: none;
+    color: #000;
+    border: 1px solid #000;
+    padding: 12px 34px;
+    font-size: 13px;                /* this is for the Visit us button*
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+} 
+.hero-btnn:hover{
+    border: 1px solid White;    /* also for the Visit us button *
+    background: #f44336;                
+    transition: 1s;
+}  */
+ 
+
+
+nav .fa{
+    display: none;   /*I AM STUCK HEREEEEEE *SIGGGHHHHH* */
+}
+
+
+
+@media (min-width: 300px) and (max-width: 480px){
+    .main-page h1{
+        font-size: 29px;      /* this is  the font size for a small device like a (phone) the Dorbe caption */
+        /* width: 100%; */
+    }
+    .nav-links ul li{
+        display:contents;
+    }
+    .nav-links{
+        position: fixed;
+        background: #f44336;
+        height: 33vh;   /* this is the length of nav bar in the preset for a smart device */
+        width: 184px;
+        top: 0;
+        /* width: 100px; */
+        right: -184.5px; 
+        /* right: -40px; */    /* this removes the orange slide menu and stops it from overflowing on the right*/
+        text-align: left; 
+        z-index: 2;
+        transition: 1s;  /* This is for the bar on the mobile device on the top right */
+    
+    } 
+
+nav .fa{
+    display: block;
+    color: #fff;
+    margin: 10px;
+    font-size: 22px;
+    cursor: pointer;
+}
+}/* anything after this is not included in the mobile section*/
+
+.nav-links ul{
+    padding: 30px;
+}
+
+
+
+/*this hid the close and menu bar from both the website and the mobile devices and it had to be ahead @media for it work work (the guy in the video said)*/
+
+
+
+/*---------------------------------------Introduction-----------------------------------*/
+
+
+
+.introduction{
+    width:80%;
+    margin: auto;
+    text-align: center; /*the space between the background and the heading*/
+    padding-top: 100px;
+}
+h1{
+    font-size: 36px;       /* this is for the main heading of the title after the background pictiure*/
+    font-weight: 600;
+}
+
+p{
+    color: #777;
+    font-size: 14px;
+    font-weight: 300;            /* this is for the two boxes in the middle of the page */
+    line-height: 22px;
+    padding: 10px;
+    text-align: justify;
+}
+
+.row{
+     margin-top: 5%;
+     display: flex;
+     justify-content: space-between;  /*this section will arrange the section into its places */
+}
+
+.statements{
+    flex-basis: 47%;
+    background: #fff3ff;
+    border-radius: 10px;
+    margin-bottom: 5%;        /* this is for the two boxes in the middle of the page */
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s; 
+}
+
+h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+ 
+.statements:hover {
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);   /* this is for the two boxes in the middle of the page */
+} 
+
+@media (min-width: 300px) and (max-width: 480px) {
+    .row{
+        flex-direction: column;
+    }
+}
+
+
+
+/*----------------------------------------------Our Projects First Page-----------------------------------------------*/
+
+
+
+.projects{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+.projects-col{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;  /* this is for the image which on our global campus */
+    position: relative;
+    overflow: hidden; 
+}
+.projects-col img{
+    width: 100%;      /* this is for the image which on our global campus */
+    display: block;   /* this makes the corner of the three boxes round */
+}
+.layer{
+    background: transparent ;  /* this is for the image which on our global campus */
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+.layer:hover{
+    background: rgba(67, 67, 63, 0.7);  /* this will change the pictures colour when ever i hover over them*/
+}
+
+.layer h3{
+    width: 100%;
+    font-weight: 500;
+    color: white;
+    font-size: 26px;        /* this section is for the 3 body inside, it changes title */
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+} 
+
+.layer:hover h3{
+    Bottom: 49%;      /* when someone hovers over the 3 images the name on that page will show */
+    opacity: 0.5s;
+}
+
+
+
+/*--------------------------------------------Our Projects First Page ----------------------------------------------*/
+
+/*---------------------------------------------Facilities First page-----------------------------------------------*/
+
+
+
+.facilities{ 
+    width: 80%;
+    margin: auto;
+    text-align: center;    /* this is for the section under the two pictures */
+    padding-top: 30px;
+}
+
+.facilities-col{ 
+    flex-basis: 31%;
+    border-radius:10px;
+    margin-bottom: 5%;   /* this is for the 3 pictures */
+    text-align: left;
+    text-align: center;
+}
+.facilities-col img{
+    width:100%;              /* this is for the 3 pictures */
+    border-radius: 15px;
+}
+
+.facilities-col p{ 
+    padding: 0%;              /* this is for the 3 pictures but the (paragraph section) */
+}
+
+.facilities-col h3{
+    margin-top: 16px;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+
+
+/*---------------------------------------------Facilities First page-----------------------------------------------*/
+
+
+
+.testimonials{
+    width: 80%;
+    margin: auto;
+    padding-top: 2px;
+    text-align: center;
+}
+
+.testimonial-col{
+    flex-basis: 44%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+    background: #fff3f3;
+    padding: 25px;
+    cursor: pointer;
+    display: flex; 
+} 
+
+.testimonial-col img{
+    height: 40px;
+    margin-left: 5px;
+    margin-right: 30px;
+    border-radius: 50%;
+}
+
+.testimonial-col p{
+    padding: 0;
+}
+
+.testimonial-col h3{
+    margin-top:15px;
+    text-align: left;
+} 
+
+.testimonial-col .fa{
+    color: #f44336;
+}
+
+/* @media(max-width: 700px) { 
+    .testimonial-col img{
+        margin-left: 0px;
+        margin-right: 15px;
+    }
+ } */
+
+
+
+/*---------------------------------------------Facilities First Page-----------------------------------------------*/
+
+
+/* --------------------------------------------Call To Action First Page-------------------------------------------*/
+
+
+
+.cta{
+    margin: 100px auto;
+    width: 80%;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(Images/ehis10.png);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;           /*   This is for the section under the one with stars (contact us) */
+    text-align: center;
+    padding: 100px 0;
+}
+
+.cta h1{
+    color: white;
+    margin-bottom: 40px;          /*   This is for the section under the one with stars (contact us) */
+    padding: 0;
+}
+
+@media (min-width: 300px) and (max-width: 480px) {
+    .cta h1{
+        font-size: 24px;         /* this is for the section when on a small device */
+    }
+}
+
+
+
+/*-------------------------------------------------------------------------------------------------------------
+                                                ABOUT SECTION SECOND PAGE           
+/*------------------------------------------------------------------------------------------------------------*/
+
+
+
+ .sub-header {
+    height: 70vh;   /* this will widen the image at the top of the (about page) */
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7), 
+    rgba(4,9,30,0.7)),url(Images/ehis11.png);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;     /* This will change the (H1) text in the diagram if i uncomment the about us from the Html */
+
+ }
+
+.sub-header h1{
+    margin-top: 100px; /* this will help determine how high and low the "About us" in the second page */
+    font-size: 62px;
+    color: white;
+}
+
+.about-us{
+    width: 80%;
+    margin: auto;
+    padding: 20px 30px 30px 30px;
+    /*padding-top: 80px;
+    padding-bottom: 100px; */
+}
+
+.about-col{
+    flex-basis: 48%;
+    padding: 30px 2px;
+}
+
+.about-col img{
+    width: 100%;
+}
+
+.about-col h1{
+   /* padding-top: 0;       /*this is for the (H1) if i do decide to add a heading to make it bold */
+   padding: 30px 15px 0px 0px;
+   text-align: center;
+   
+} 
+
+.about-col p{
+    padding: 10px 30px 50px 0px;
+}
+
+.red-btn{
+    border: 1px solid #f44336;
+    background: transparent;
+    color: #f44336;
+}
+
+.red-btn:hover{
+    color: #fff;
+}
+
+
+.hero-btnn{
+    display: inline-block;
+    text-decoration: none;
+    color: #000;
+    border: 1px solid #000;
+    padding: 12px 34px;
+    font-size: 13px;                /* this is for the Visit us button*/
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+} 
+.hero-btnn:hover{
+    border: 1px solid White;    /* also for the Visit us button */
+    background: #f44336;                
+    transition: 1s;
+} 
+
+
+
+
+
+
+/*----------------------------------------------------------------------------------------------------------*
+                                        ABOUT US PAGE SECOND PAGE 
+/*----------------------------------------------------------------------------------------------------------*/
+
+
+
+/*----------------------------------------------------------------------------------------------------------*
+                                        PROJECTS PAGE THIRD PAGE 
+/*---------------------------------------------------------------------------------------------------------*/
+
+
+
+.project-header {
+    height: 70vh;   /* this will widen the image at the top of the (about page) */
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7), 
+    rgba(4,9,30,0.7)),url(Images/project.png);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;     /* This will change the (H1) text in the diagram if i uncomment the about us from the Html */
+
+ }
+
+ .project-title h1{
+    margin-top: 100px; /* this will help determine how high and low the "About us" in the second page */
+    font-size: 62px;
+    color: white;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    background-color: #f0f0f0;
+    padding: 20px 0;
+}
+
+.gallery {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.images-container {
+    position: relative;
+    overflow: hidden;
+    margin: 5%;
+    width: 90%;
+}
+
+.image {
+    display: none;
+}
+
+/* Adjust the width of each individual image container */
+.image:nth-child(1) { /* First image */
+    width: 80%;
+    margin-left: 5%;
+}
+
+.image:nth-child(2) { /* Second image */
+    width: 80%;
+    margin-left: 5%;
+}
+
+.image:nth-child(3) { /* Third image */
+    width:80%;
+    margin-left: 5%;
+}
+
+.image:nth-child(4) { /* Third image */
+    width:80%;
+    margin-left: 5%;
+}
+
+.image:nth-child(5) { /* Third image */
+    width:75%;
+    margin-left: 5%;
+}
+
+/* Add more styles for additional images as needed */
+
+.image.active {
+    display: block;
+}
+
+.image img {
+    width: 100%; /* Adjust the size of the image inside each container */
+    height: auto;
+    margin-top: 20px;
+    margin-left: 10%;
+}
+
+.controls {
+    text-align: center;
+    margin-top: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 2%;
+    margin-left: 2%;
+}
+
+button:hover {
+    background-color: grey;
+}
+
+
+/*------------
+
+.project-title {
+    width: 100%;
+    overflow-x: scroll;
+    white-space: nowrap;
+}
+.project-title img {
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+}
+*/
+
+
+
+
+
+
+
+/*----------------------------------------------------------------------------------------------------------*
+                                        CONTACT PAGE THIRD PAGE 
+/*---------------------------------------------------------------------------------------------------------*/
+
+
+
+.contact-header {
+    height: 70vh;   /* this will widen the image at the top of the (about page) */
+    width: 100%;
+    background-image: linear-gradient(rgba(30, 4, 4, 0.7), 
+    rgba(4,9,30,0.7)),url(Images/ehis9.png);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;     /* This will change the (H1) text in the diagram if i uncomment the about us from the Html */
+
+ }
+
+ .contact-title h1{
+    margin-top: 100px; /* this will help determine how high and low the "About us" in the second page */
+    font-size: 62px;
+    color: white;
+}
+
+body.contactus {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('background.jpg'); /* Replace with your image URL */
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+.contactus {
+    position: relative;
+    background: white;
+    padding: 2em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+    z-index: 1;
+    margin: 5% 0% 5% 30%;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 1em;
+}
+
+.form-group {
+    margin-bottom: 1em;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5em;
+    color: #555;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 0.75em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 0.5em;
+    font-size: 1em;
+    color: #333;
+}
+
+button {
+    padding: 0.75em 1.5em;
+    border: none;
+    background-color: #5cb85c;
+    color: white;
+    font-size: 1em;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #4cae4c;
+}
+
+.hidden {
+    display: none;
+}
+
+#successMessage {
+    color: #5cb85c;
+    margin-top: 1em;
+    font-size: 1.2em;
+}
+
+@media (min-width: 300px) and (max-width: 480px){
+.contactus {
+    position: relative;
+    width:fit-content;
+     margin: 40px 10px 40px 34px; 
+
+    padding: 50px 80px 50px 10px; 
+}
+}
+
+@media (min-width: 300px) and (max-width: 480px){
+    .contactus .form-group{
+        position: relative;
+       padding: 5px 2px 5px 20px;
+
+    }
+    
+}                  /* The media section works for the small device */
+
+@media (min-width: 300px) and (max-width: 480px){
+    .contactus h1{
+        font-size: 20px;
+        /* position: center;  */
+         margin: 15px 20px 0px 20px;  
+        padding: 15px 20px 0px 69px;
+    }
+}
+
+/*@media (min-width: 300px) and (max-width: 480px){
+    .hero-btn-red-btn{
+        margin-left: auto; /* Moves the button to the right 
+    margin-right: 25px;
+    width: auto; /* Ensure the button does not take full width 
+    display: block;
+    }
+}*/
+
+
+
+
+
+
+
+@media (min-width: 300px) and (max-width: 480px) {
+    .hero-btnnn-red-btn{
+        margin-left: 47px;
+        /* padding-right: 10px; */
+    }
+}
+
+
+
+
+
+
+/*------------------------------------------------------------------------------------------------------------*/
+                  /*       Footer Section for all the pages           */
+/*------------------------------------------------------------------------------------------------------------*/
+
+
+
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.footer h4{
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+/* .icons { 
+    color: #f44336;
+    margin: 0px 13px;
+    cursor: pointer;
+    padding: 18px 0;
+    display:flex;
+  }  */
+
+footer {
+    background-color: #333333;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .contact, .about, .follow-us {
+    flex: 1;
+  }
+
+  .about img{
+    width: 100px;
+  }
+  
+  .contact h2 {
+    font-size: 23px;
+    padding: 10px 0px 0px 210px;
+    /* margin-bottom: 2%;
+    margin-left: 30%; */
+   /* padding: 0px 10px 0px 200px; */
+  }
+
+  .contact p {
+    margin-left: 200px;
+  }
+
+  .about h2 {
+    font-size: 18px;
+  }
+
+  .about h2 {
+    font-size: 18px;
+  }
+
+  .contact p, .about p {
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: white;
+  /* padding: 0px 10px 0px 200px;      this moves the email, phone, visitor count  etc under contact */
+  }
+  
+  .contact a {
+    color: white; /* this will make the email white*/
+    text-decoration: none; /* Remove underline */
+  }
+  
+  .contact a:hover {
+    text-decoration: underline; /* this will allow the email to be underlined when i hover over it.*/
+  }
+  
+.follow-us h2{
+  font-size: 23px;
+  padding-left: 100px;
+  padding-top: 12px;
+}
+
+  .follow-us ul {
+    list-style: none;
+    padding: 13px 0px 10px 0px; 
+  }
+  
+  .follow-us li {
+    margin-bottom: 5px;
+    padding: 10px 0px 0px 130px;          /* this moves the Facebook etc to the side */
+  }
+  
+  .follow-us a {
+    color: white;
+    text-decoration: none;
+  }
+
+  /* .copyright h2{
+    font-size: 23px;
+        padding: 10px 300px 0px 30px;
+  } */
+
+
+  .copyright p{
+    padding-top: 30px;
+    color:rgba(133, 133, 133, 0.7)
+  }
+  
+
+  @media (min-width: 300px) and (max-width: 480px) {
+    .copyright p{
+        font-size: 1px;
+        padding-top: 10px;
+        padding-right: 250px;
+        color:rgba(133, 133, 133, 0.7)
+    }
+  }
+  
+
+   /* @media (max-width: 768px) { 
+    .contact h2 {
+        font-size: 23px;
+        text-align: left;
+        margin: 1px 1px 40px 45px;
+
+        /* min-width: 50%; *
+
+    }
+ }  */
+
+
+
+ 
+
+/* @media (max-width: 768px) {
+    .contact h2 {
+        /* margin-left: 5%; *
+    
+} */
+
+  /* @media (max-width: 768px) {
+    .contact p {
+        flex-direction: column;
+        align-items: left;
+        min-width: 50%;        /*this makes the page go wider*
+        text-align: left;
+        margin-left: 1px;
+    }
+} */
+
+
+/* @media (max-width: 480px) {
+    .contact p {
+        min-width: 50%;
+        text-align: left;
+        margin-left: 1px;
+    }
+} */
+
+
+/* @media (max-width: 768px) {
+    .contact h2 {
+        margin-left: 3%;
+    }
+} */
+
+@media (min-width: 300px) and (max-width: 480px){
+    .follow-us h2 {
+        font-size: 13px;
+        min-width: 0.5%;
+        /* text-align: right; */
+        /* margin: 0px 6px 20px -90px; */
+        padding: 5px 6px 20px 100px;
+    }
+}
+
+@media (min-width: 300px) and (max-width: 480px) {
+    .follow-us ul {
+        margin: 5px 10px 0px -70px; 
+        padding: 0px 0px 90px 60px;
+        /* t l b r*/
+    }
+} 
+
+
+
+
+
+@media (min-width: 300px) and (max-width: 480px) {
+    .contact h2 {
+        font-size: 13px;
+        min-width: 0.5%;
+        /* text-align: right; */
+        /* margin: 1px 6px 10px -220px; */
+        padding: 5px 6px 10px 0px;
+    }
+}
+
+@media (min-width: 300px) and (max-width: 480px) {
+    .contact p {
+        font-size: 13px;
+        min-width: 0.5%;
+        padding: 8px 0px 3px 0px; 
+        margin: 4px 6px 10px 1px;
+    }
+} 
+
+
+
+
+/*------------------------------------------------------------------------------------------------------------*/
+                  /*       Footer Section for all the pages           */
+/*------------------------------------------------------------------------------------------------------------*/
+
+
